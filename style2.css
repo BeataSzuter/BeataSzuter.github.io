@@ -1,0 +1,172 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: -20px 0;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    background-color: hsl(0, 0%, 90%);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 500px;
+    height: 600px;
+    margin: 70px auto;
+}
+
+p, button {
+    font-family: 'Spartan', sans-serif;
+}
+
+#topwindow {
+    background-color: hsl(0, 0%, 93%);
+    height: 100px;
+    margin: 0 0 15px 0;
+    border-radius: 10px;
+}
+
+#bottomwindow {
+    background-color: hsl(0, 5%, 81%);
+    border-radius: 10px;
+    height: 430px;
+    padding: 30px 30px 0 30px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    height: 400px;
+    border-radius: 5px;
+    clear: right;
+}
+
+button {
+    border-radius: 10px;
+    padding-top: 5px;
+}
+
+.white {
+    font-size: 30px;
+    background-color: hsl(45, 7%, 89%);
+    color: hsl(60, 10%, 19%);
+    border: none;
+    box-shadow: 0 -4px hsl(35, 11%, 61%) inset;
+}
+
+.blue {
+    font-size: 18px;
+    color: white;
+    background-color: hsl(185, 42%, 37%);
+    border: none;
+    box-shadow: 0 -4px hsl(185, 58%, 25%) inset;
+}
+
+.red {
+    background-color: hsl(25, 98%, 40%);
+    color: white;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0 -4px hsl(25, 99%, 27%) inset;
+}
+
+#reset {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#eq {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#result {
+    position: relative;
+    float: right;
+    font-size: 40px;
+    font-family: 'Spartan', sans-serif;
+    color: hsl(60, 10%, 19%);
+    margin-right: 30px;
+    bottom: 10px;
+}
+
+
+/*----THEME TOGGLE----*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+#calc {
+    color: hsl(60, 10%, 19%);
+    font-size: 27px;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 15px;
+}
+
+#themebox {
+    display: flex;
+    position: relative;
+    top: 20px;
+    height: 23px;
+}
+
+#theme {
+    position: relative;
+    font-size: 10px;
+    color: hsl(60, 10%, 19%);
+    margin-right: -30px;
+    bottom: 3px;
+    letter-spacing: 1px;
+}
+
+.radio {
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: hsl(0, 5%, 81%);
+    width: 65px;
+}
+
+.radio_input {
+    display: none;
+}
+
+.radio_label {
+    color: hsla(0, 5%, 81%, 0);
+    position: relative;
+   margin: 0 3px 0 2.5px;
+   left: 2px;
+   top: 4px;
+   background-color: hsl(0, 5%, 81%);
+   height: 15px;
+   padding: 0 3.5px 0 3.5px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.radio_input:checked + .radio_label {
+    background: hsl(25, 98%, 40%);
+    color: hsla(6, 63%, 50%, 0);
+}
+
+#nums {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 50px;
+    color: hsl(60, 10%, 19%);
+    font-family: 'Spartan', sans-serif;
+    font-size: 10px;
+    bottom: 25px;
+    left: 58px;
+}
